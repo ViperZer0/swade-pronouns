@@ -9,6 +9,18 @@ in Foundry VTT. That's it!
   field. You have to click off the pronoun box *then* close the character sheet.
 - No localization yet.
 
+# Installation
+
+In Foundry, click "Install Module" then copy the link to the
+manifest/module.json:
+
+```
+https://raw.githubusercontent.com/ViperZer0/swade-pronouns/main/module.json
+```
+
+Enable the module in any world. That's it! You should now see the new 
+field appear on player character sheets.
+
 # License 
 
 SWADE Pronouns is licensed under the [GNU GPL v3.0 License](LICENSE).

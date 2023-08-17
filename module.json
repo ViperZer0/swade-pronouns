@@ -2,7 +2,7 @@
     "id": "swade-pronouns",
     "title": "SWADE Pronouns",
     "description": "Adds a pronouns field in SWADE player character sheets",
-    "version": "0.0.1",
+    "version": "0.9.0",
     "authors": [
         {
             "name": "ViperZer0",
@@ -29,7 +29,8 @@
     "styles": [
         "styles/swade-pronouns.css"
     ],
-    "manifest": "",
-    "download": ""
+    "manifest": "https://raw.githubusercontent.com/ViperZer0/swade-pronouns/main/module.json",
+    "download": "https://github.com/ViperZer0/swade-pronouns/archive/main.zip",
+    "readme": "./README.md"
 }
 

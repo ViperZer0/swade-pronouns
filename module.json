@@ -2,7 +2,7 @@
     "id": "swade-pronouns",
     "title": "SWADE Pronouns",
     "description": "Adds a pronouns field in SWADE player character sheets",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "authors": [
         {
             "name": "ViperZer0",
@@ -11,7 +11,7 @@
     ],
     "compatibility": {
         "minimum": "10.0",
-        "verified": "11.306"
+        "verified": "12.331"
     },
     "relationships": {
         "systems": [{
@@ -19,7 +19,7 @@
             "type": "system",
             "manifest": "https://gitlab.com/peginc/swade/-/releases/v3.0.6/downloads/system.json",
             "compatibility": {
-                "verified": "3.0.6"
+                "verified": "4.1.1"
             }
         }]
     },

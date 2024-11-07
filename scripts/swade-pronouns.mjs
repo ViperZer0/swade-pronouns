@@ -4,12 +4,12 @@
 Hooks.on('renderCharacterSheet', (characterSheet, html, data) => {
     console.log(characterSheet);
     let sheetToInsert = {};
-    if (html.is("form.main-grid.editable"))
+    if (html.is("form.main-grid"))
     {
         sheetToInsert = html;
     }
     else{
-        sheetToInsert = html.find("form.main-grid.editable");
+        sheetToInsert = html.find("form.main-grid");
     }
 
     if (sheetToInsert === undefined)
@@ -24,9 +24,21 @@ Hooks.on('renderCharacterSheet', (characterSheet, html, data) => {
         characterSheet.object.update({'flags.swadePronouns.pronouns': ""});
     }
 
+    /* Only enable changing the input field if this is sheet is editable (i.e
+     * belongs to the player) */
+    let disabled = false;
+    if (sheetToInsert.is("form.editable"))
+    {
+        disabled = false;
+    }
+    else if (sheetToInsert.is("form.locked"))
+    {
+        disabled = true;
+    }
+
     const inputHtml = `<span class="gridcell character-detail pronouns" data-tooltip="Pronouns">
 <label class="sr-only">Pronouns</label>
-<input type="text" name="pronouns" value="${characterSheet.object.flags.swadePronouns.pronouns}" data-tooltip="Pronouns" placeholder="Pronouns">
+<input type="text" name="pronouns" value="${characterSheet.object.flags.swadePronouns.pronouns}" data-tooltip="Pronouns" placeholder="Pronouns" ${disabled ? "disabled" : ""}>
 </span>`
 
     sheetToInsert.append(inputHtml);

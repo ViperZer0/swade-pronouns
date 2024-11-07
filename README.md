@@ -38,3 +38,10 @@ SWADE Pronouns does not contain with it any assets or resources
 related to the SWADE system but does reference the system and
 depends on it. 
 
+# Changelog
+
+## 0.9.1 - 2024-11-06
+
+### Fixed
+- Fixed issue where players could only see pronouns for character sheets they
+  owned.

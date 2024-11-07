@@ -29,6 +29,7 @@
     "styles": [
         "styles/swade-pronouns.css"
     ],
+    "url": "https://github.com/ViperZer0/swade-pronouns",
     "manifest": "https://raw.githubusercontent.com/ViperZer0/swade-pronouns/main/module.json",
     "download": "https://github.com/ViperZer0/swade-pronouns/archive/main.zip",
     "readme": "./README.md"
